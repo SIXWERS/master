@@ -1,15 +1,13 @@
-string namestring;
-string characterClass;
-string weapon;
-System.Console.WriteLine("введите имя персонажа:");
-namestring = System.Console.ReadLine();
 
-System.Console.WriteLine("Введите класс (Воин, Маг, Лучник):");
-characterClass = System.Console.ReadLine();
+int hp;
+int dmg;
 
-System.Console.WriteLine("Введите оружие:");
-weapon = System.Console.ReadLine();
 
-System.Console.WriteLine($"Имя: {namestring}");
-System.Console.WriteLine($"класс: {characterClass}");
-System.Console.WriteLine($"оружие: {weapon}");
+System.Console.WriteLine("Введите базовое здоровье (HP):");
+ hp = int.Parse(System.Console.ReadLine());
+ int maxhp = hp + 50;
+ System.Console.WriteLine("Введите базовый урон:");
+dmg = int.Parse(System.Console.ReadLine());
+ int critdmg = dmg * 2;
+ System.Console.WriteLine($"максимальное здоровье: {maxhp}");
+ System.Console.WriteLine($"критический урон: {critdmg}");
